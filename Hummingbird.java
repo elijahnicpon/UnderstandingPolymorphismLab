@@ -3,19 +3,19 @@ import java.util.Date;
 
 public class Hummingbird extends Bird {
 
-    private int milliLitersSlurpedFromMyMomsHummingBirdFeeder;
+    private int nectarConsumed;
 
     public Hummingbird(boolean isAlive, Date dob, String name,
                        BeakSize beakSize, boolean flightCapable, Color wingColor,
                        int milliLitersSlurpedFromMyMomsHummingBirdFeeder) {
         super(isAlive, dob, name, beakSize, flightCapable, wingColor);
-        this.milliLitersSlurpedFromMyMomsHummingBirdFeeder = milliLitersSlurpedFromMyMomsHummingBirdFeeder;
+        this.nectarConsumed = milliLitersSlurpedFromMyMomsHummingBirdFeeder;
     }
 
 
     private void slurp() {
-        milliLitersSlurpedFromMyMomsHummingBirdFeeder += 10;
-        System.out.println("slurrrrrp. total: " + milliLitersSlurpedFromMyMomsHummingBirdFeeder);
+        nectarConsumed += 10;
+        System.out.println("slurrrrrp. total nectar consumed: " + nectarConsumed + "ml");
     }
 
     @Override
