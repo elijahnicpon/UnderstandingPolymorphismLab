@@ -12,6 +12,13 @@ public class Hummingbird extends Bird {
         this.nectarConsumed = milliLitersSlurpedFromMyMomsHummingBirdFeeder;
     }
 
+    // TODO 2.3.1: Implement makeNoise() here.
+
+
+
+    // TODO 4.2: Override the `toString()` method here.
+
+
 
     private void slurp() {
         nectarConsumed += 10;

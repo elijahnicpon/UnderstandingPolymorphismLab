@@ -17,13 +17,15 @@ public abstract class Animal {
         else return dob.getYear() - new Date().getYear();
     }
 
-    public abstract void makeNoise();
+    // TODO 2.1: Implement makeNoise() in Bird.java
+    // public void makeNoise();
 
     public void die() {
         isAlive = false;
         System.out.println("rip, " + name);
     }
 
+    // TODO 4.4: add a super.toString() call to this toString() method.
     @Override
     public String toString() {
         return "name: " + name +  ", isAlive: " + isAlive + ", dob: " + dob.toString();

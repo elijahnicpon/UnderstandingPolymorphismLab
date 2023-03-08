@@ -16,20 +16,25 @@ Anyways... onto the lab. I was going to add the methods to the diagram, but I ke
 *The creation of well-defined classes and interfaces to hide well the complex inner workings from its users.*
 
 ### Abstract Classes
-- `TODO: 1.1` In Main.java, try to declare a Bird, an Animal, and a Hummingbird.
-- `TODO: 1.2` Try to instantiate the values created in the previous step. What happens?
+- `TODO: 1.1` In Main.java, declare (not instantiate) a Bird, an Animal, and a Hummingbird.
+- `TODO: 1.2` In the `main()` method, try to instantiate the values created in the previous step by calling `new Animal()`, `new Bird()`, and `new Hummingbird()`
+  - This step requires you (or your pair programmer) to dive into Oracle's documentation for Color and Date. Look for some static variables (like Integer's Integer.MAX_VALUE) to use to instantiate your Animal, Bird, and Hummingbird.
+    - (Java.awt.Color)[https://docs.oracle.com/javase/7/docs/api/java/awt/Color.html]
+    - (Java.util.Date)[https://docs.oracle.com/javase/8/docs/api/java/util/Date.html]
+      - Not Java.sql.Date
+  - If you use autocomplete, IntelliJ may give you a boilerplate of code, if you completed it, it technically works, but is not the point of this exercise, so ignore it please.
 
 ### Abstract Methods
-- `TODO: 2.1` Make the Animal.java class's an `makeNoise()` method abstract.
+- `TODO: 2.1` Declare an abstract method in Animal.java called makeNoise().
+  - 
   - Ah! Some red squigglies have appeared! We must fix them!
   - `TODO: 2.2` Solution 1: Implement `makeNoise()` in the Bird class
     - Use this if you forgot what birds sound like `System.out.println("tweet tweet");`
     - Write some code to test what happens when we call makeNoise on both a Hummingbird and a Hawk.
-    - Lastly, comment out your implementation to prepare for solution 2...
   - `TODO: 2.3` Solution 2: Implement `makeNoise()` in both the HummingBird and Hawk classes.
     - Make something up if you don't know what those sound like
     - Write some code to test what happens when we call makeNoise on both a Hummingbird and a Hawk.
-    - Keep your code from this step or 2.2 before moving on.
+  - `TODO: 2.4` What would happen if you uncommented the implementation of makeNoise in Bird.java? Uncomment the code from `TODO 2.2` in Bird.java.
 
 ***
 ## Polymorphism
@@ -44,12 +49,12 @@ Example: The `indexOf()` method of Java's `String` class.
 ![img_1.png](img_1.png)
 
 - `TODO: 3.1` Overload the `killVermin()` method in Hawk.java to take in an `int` for the number of vermin to kill.
-  - `TODO: 3.2` Call both implementations of `killVermin()` from Main.java
+  - `TODO: 3.2` Instantiate a Hawk, then call both implementations of `killVermin()` from Main.java
 
 ### Runtime Polymorphism
 *The one you know as Method Over**riding**. AKA Dynamic Method Dispatch*
 
-- `TODO: 4.1` In Main.java, instantiate a Hummingbird, then call it's `toString()` method and record the output
+- `TODO: 4.1` In Main.java, call the `toString()` method of the Hummingbird we created in `TODO 1.2` and record the output
     - Which toString() will this call? Objects? Animals? Birds?
   - `TODO: 4.2` Override the `toString()` method in Hummingbird.java using the `super` keyword
     - Refer to Bird.java's toString() method if necessary.
@@ -61,23 +66,26 @@ Example: The `indexOf()` method of Java's `String` class.
 ## Casting
 *The utilization of polymorphism in code*
 
+![img_2.png](img_2.png)
+
 ### Upcasting
 *Always compiles, always runs*
 
-`Person p1 = new Student()`
+`Bird bird1 = new Hummingbird()`
 
 ### Sidecasting
 *Never compiles, thus never runs*
 
-`Professor p1 = new Student()`
+`Hawk bird2 = new Hummingbird()`
 
-
-### DownCasting
+### Downcasting
 *Always compiles, sometimes runs*
 https://www.geeksforgeeks.org/rules-of-downcasting-objects-in-java/?ref=rp
-
 
 `Student p1 = new Person()`
 
 ***
 *Made for Elijah Nicpon's CS 1331 Exam 2 Double PLUS (Peer Led Undergraduate Study) Session*
+*Star this repo if the lab helped! <3*
+
+``

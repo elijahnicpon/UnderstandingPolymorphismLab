@@ -20,11 +20,8 @@ public abstract class Bird extends Animal {
         System.out.println("laying egg: plop!");
     }
 
-    // TODO: Comment me out.
-    @Override
-    public void makeNoise() {
-        System.out.println("tweet tweet");
-    }
+    // TODO 2.1: Implement makeNoise() here.
+
 
     @Override
     public String toString() {

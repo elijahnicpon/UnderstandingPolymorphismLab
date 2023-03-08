@@ -12,10 +12,19 @@ public class Hawk extends Bird {
         this.verminKilled = verminKilled;
     }
 
+    // TODO 2.3.2 Implement makeNoise() here.
+
+
+
+    // TODO 3.1: Overload killVermin() to take in an int.
+
+
+
     public void killVermin() {
         int randomInt = (int) Math.random() * 5;
         verminKilled += randomInt;
-        System.out.println(getName() + " murdered " + randomInt + " vermin");
+        System.out.println(getName() + " murdered " + randomInt + " vermin."
+                + "\n total: " + verminKilled);
     }
 
     @Override
