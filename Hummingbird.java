@@ -20,7 +20,7 @@ public class Hummingbird extends Bird {
 
 
 
-    private void slurp() {
+    public void slurp() {
         nectarConsumed += 10;
         System.out.println("slurrrrrp. total nectar consumed: " + nectarConsumed + "ml");
     }

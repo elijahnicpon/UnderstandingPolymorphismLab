@@ -85,12 +85,10 @@ Example: The `indexOf()` method of Java's `String` class.
 ### Downcasting
 *The tricky one. Casting a parent to a child. Always compiles, sometimes runs. Can **only** be done explicitly. (Using parenthesis)*
 
-- `TODO 5.3` Explore downcasting.
+- `TODO 5.3` Explore downcasting in Main.java.
   - What kind of error is thrown when we try to downcast implicitly?
 
 [The rules of downcasting from GeeksForGeeks](https://www.geeksforgeeks.org/rules-of-downcasting-objects-in-java/?ref=rp)
-
-- `TODO: 5.3` Explore downcasting in Main.java.
 
 ***
 *Made for Elijah Nicpon's CS 1331 Exam 2 Double PLUS (Peer Led Undergraduate Study) Session*
