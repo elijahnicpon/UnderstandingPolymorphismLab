@@ -1,9 +1,9 @@
 # Welcome!
 If you're new to Git/GitHub, this is a README, and it's pretty self-explanatory. You read it. If anyone cares, these are typically written in Markdown, an open-source markup language that adds formatting to plaintext documents. [Here's the documentation if you want to learn more.](https://www.markdownguide.org/cheat-sheet/)
 
-I'm gonna go ahead and say you'll get the most from this in an IDE. IntelliJ will probably be the easiest to set up out-of-the-box.
+I'm gonna go ahead and say you'll get the most from this in an IDE. IntelliJ will probably be the easiest to set up out-of-the-box. If you have VSCode set up that works too.
 - It may ask you to set up an SDK. Click the button and click one. I guess technically Java 11 is the right one for this course but it doesn't matter for this exercise.
-- The "Search Everywhere" feature will be your bestie. 
+- The "Search Everywhere" feature will be your bestie.
 
 Lastly, this lab is intended to be a review. If any of the words Abstraction, Polymorphism, or Casting are new to you, close this page and figure those out first.
 I'm not trying to be mean I just know this isn't good enough to teach it to you. 
@@ -65,26 +65,32 @@ Example: The `indexOf()` method of Java's `String` class.
 
 ***
 ## Casting
+- Casting allows us to convert a variable to another type.
+  - Upcasting is done automatically (implicitly).
+  - Downcasting is not done automatically (and must be done explicitly with parenthesis).
 
 ![img_2.png](img_2.png)
 
 ### Upcasting
-*Always compiles, always runs*
+*Casting a child object to a parent object. Always compiles, always runs. Can be done implicitly.*
 
 - `TODO: 5.1` Create an Object with a Static type of Bird and Dynamic type of Hummingbird.
-  - What methods can you call
+  - What methods can you call? What methods result in an error?
 
 ### Sidecasting
-*Never compiles, thus never runs*
+*Casting a sibling to a sibling. Never compiles, thus never runs*
 
 - `TODO: 5.2` I mean hopefully we know what's going to happen here... *Try* to create an Object with a static type of Hawk and dynamic type of Hummingbird.
 
 ### Downcasting
-*The tricky one. Always compiles, sometimes runs*
+*The tricky one. Casting a parent to a child. Always compiles, sometimes runs. Can **only** be done explicitly. (Using parenthesis)*
+
+- `TODO 5.3` Explore downcasting.
+  - What kind of error is thrown when we try to downcast implicitly?
 
 [The rules of downcasting from GeeksForGeeks](https://www.geeksforgeeks.org/rules-of-downcasting-objects-in-java/?ref=rp)
 
-- `TODO: 5.3` 
+- `TODO: 5.3` Explore downcasting in Main.java.
 
 ***
 *Made for Elijah Nicpon's CS 1331 Exam 2 Double PLUS (Peer Led Undergraduate Study) Session*

@@ -16,5 +16,15 @@ public class Main {
             // TODO 4.3 & TODO 4.5: Run it again.
 
 
+        // TODO 5.1: Create an Object with a Static type of Bird and Dynamic type of Hummingbird.
+
+
+        // TODO 5.2: Try to create an Object with a static type of Hawk and dynamic type of Hummingbird.
+
+
+        // TODO 5.3:
+
+
+
     }
 }
