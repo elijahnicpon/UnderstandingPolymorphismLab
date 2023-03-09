@@ -20,7 +20,7 @@ public abstract class Bird extends Animal {
         System.out.println("laying egg: plop!");
     }
 
-    // TODO 2.1: Implement makeNoise() here.
+    // TODO 2.2: Implement makeNoise() here.
 
 
     @Override

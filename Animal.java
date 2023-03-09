@@ -17,8 +17,7 @@ public abstract class Animal {
         else return dob.getYear() - new Date().getYear();
     }
 
-    // TODO 2.1: Implement makeNoise() in Bird.java
-    // public void makeNoise();
+    // TODO 2.1: Declare an abstract method in Animal.java called makeNoise().
 
     public void die() {
         isAlive = false;
